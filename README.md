@@ -16,6 +16,8 @@ This Python program sends weather alerts via Telegram based on OpenWeatherMap da
     TELEGRAM_BOT_TOKEN=<your_telegram_bot_token>
     TELEGRAM_CHAT_ID=<your_telegram_chat_id>
     OWM_API_KEY=<your_openweathermap_api_key>
+    CITY_LATITUDE=<your_city_latitude>
+    CITY_LONGITUDE=<your_city_longitude>
     ```
 
 3. Run the `main.py` script to receive weather alerts.

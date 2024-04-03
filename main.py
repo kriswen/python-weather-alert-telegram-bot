@@ -8,6 +8,8 @@ load_dotenv()
 telegram_bot_token = os.environ.get("TELEGRAM_BOT_TOKEN")
 telegram_chat_id = os.environ.get("TELEGRAM_CHAT_ID")
 owm_api_key = os.environ.get("OWM_API_KEY")
+my_lat = os.environ.get("CITY_LATITUDE")
+my_lon = os.environ.get("CITY_LONGITUDE")
 
 def telegram_bot_sendtext(bot_message):
     bot_token = str(telegram_bot_token)
@@ -22,8 +24,8 @@ def telegram_bot_sendtext(bot_message):
 
 OWM_endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 weather_params = {
-    "lat": 37.529659,  # Newark
-    "lon": -122.040237,
+    "lat": my_lat,
+    "lon": my_lon,
     "cnt": 4,
     "appid": owm_api_key,
 }
